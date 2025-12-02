@@ -2,7 +2,7 @@
 current_position = 50
 zero_count = 0
 
-with open('input_day_1.txt', 'r') as puzzle_input:
+with open('day_1/input_day_1.txt', 'r') as puzzle_input:
     for rotation in puzzle_input:
         if rotation.startswith("L"):
             current_position = (current_position - int(rotation.strip("L"))) % 100

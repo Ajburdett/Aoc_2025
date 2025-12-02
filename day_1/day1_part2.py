@@ -2,7 +2,7 @@
 current_position = 50
 zero_count = 0
 
-with open('input_day_1.txt', 'r') as puzzle_input:
+with open('day_1/input_day_1.txt', 'r') as puzzle_input:
     for rotation in puzzle_input:
         if rotation.startswith("L"):
             rotation_amount = int(rotation.strip("L"))
@@ -12,10 +12,10 @@ with open('input_day_1.txt', 'r') as puzzle_input:
             # If we are currently at position 0
             # the next time we hit 0 is after 100 clicks
             # (because 1 click left goes to 99,
+            # we first hit 0 after that position number of clicks
             # then 99 more clicks are needed to get back to 0)
 
-            # **Otherwise - if we are in any other position
-            # we first hit 0 after that position number of clicks
+            # Otherwise - if we are in any other position
 
             # Then we hit 0 every 100 clicks after that
             if current_position == 0:
