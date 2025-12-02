@@ -1,6 +1,4 @@
 
-
-lock_positions = range(100)
 current_position = 50
 zero_count = 0
 
@@ -14,7 +12,3 @@ with open('input_day_1.txt', 'r') as puzzle_input:
             zero_count += 1
 
 print(zero_count)
-
-
-
-
